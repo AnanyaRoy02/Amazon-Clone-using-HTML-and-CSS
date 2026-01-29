@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/**box 1 Amazon logo **/
+
+.navbar{
+    background:rgb(2, 2, 39);
+    height:60px ;
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: space-evenly;
+}
+.border{
+    border: 1.5px solid transparent;
+    box-sizing: content-box;
+    
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url("images/amazon_logo.png");
+    background-size: cover; /** it fills the entire image in the div and no empty space remains **/
+    height: 90%;
+    width: 90%;
+    
+}
+
+
+/** box 2 **/
+
+.add-first{
+    color: rgb(163, 162, 162);
+    margin-left: 21px;
+    font-size: 0.8rem;
+}
+.add-second{
+    color: white;
+    display: flex;
+    margin-left: 3px;
+    font-size: 1rem;
+}
+.add-icon i {
+    color: white;
+    
+}
+.add-icon{
+    display: flex;
+}
+
+/** box 3 **/
+
+.nav-search{
+    
+    background-color: white;
+    margin-left: 30px;
+    height: 40px;
+    width: 620px;
+    display: flex;   
+    border-radius: 5px;
+    overflow: hidden; /**important :- Anything inside must stay inside the rounded shape**/
+    justify-content: space-evenly;  /**separaate even space between the div **/
+}
+.select-choice{
+    display: flex;
+    background-color: rgb(216, 212, 212);
+    align-items: center;  /** vertically centre **/
+    justify-content: center; /**horizontal centre **/
+    
+}
+.search-select{
+    
+    background-color: rgb(219, 219, 219);
+    width: 50px;
+    text-align: center; /** to centre the text "all" **/
+    border: none; /** remove all the border frrom select **/
+    color: rgb(79, 79, 79);
+}
+.search-select:hover{
+    background-color: rgb(202, 199, 199); ;
+    color: black;
+}
+.search-input{
+    height: 40px;
+    width: 580px;
+    border: none;
+    font-size: 1rem;
+
+}
+.search-icon{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(237, 185, 90);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   border-radius: 0%;
+}
+.search-icon i {
+    font-size: 1.5rem; /**to increase the size of the icon **/
+    font-weight: bold; /** to bold the icon **/
+}
+.search-icon:hover{
+    background-color: rgb(245, 174, 44);
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+/**box 4 england logo**/
+
+.nav-eng-logo{
+    height: 55px;
+    width: 50px;
+    
+    align-items: center;
+    display: flex;
+    gap: 5px; /** it creates gap between the child element i.e the england logo and EN **/
+    
+}
+.eng-logo{
+    height: 30px;
+    width: 40px;
+    
+    background-image:url("images/eng-logo.png") ;
+    background-repeat: no-repeat;
+    background-size: contain; /* shows full logo */
+    background-position: center;
+    
+}
+.nav-eng-logo i{
+    color: rgb(150, 148, 148);
+    font-size: 16px;
+    
+}
+/** box 5 **/
+.nav-hello{
+    color: rgba(232, 230, 230, 0.89);
+    font-size: 14px;
+}
+.nav-account{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/**box 6 **/
+
+.return{
+    color: rgba(232, 230, 230, 0.89);
+    font-size: 14px;
+}
+.orders{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+/**box 7 **/
+.cart{
+    color: white;
+}
+.nav-cart{
+    display: flex;
+    height: 50px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-cart i{
+    font-size: 25px;
+    color: white;
+}
+/** css for panel **/
+.panel{
+    display: flex;
+    background-color: rgb(41, 41, 57);
+    width: 100%;
+    height: 40px;
+    justify-content: flex-start; /** moves everything to left **/
+    color: white;
+    align-items: center;
+}
+.panel-option {
+   /** width: 90px; */
+    height: 100%;
+    color: white;
+    margin-left: 10px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+
+}
+.panel-all{
+    height: 100%;
+    width: 50px;
+    margin-left: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+
+}
+/** body of amazon clone **/
+.hero-section{
+    background-image: url("images/hero-section.jpeg");
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /** the msg will be in the bottom **/
+
+}
+.hero-msg{
+    width: 95%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.hero-msg a{
+    color: #2162a1;
+
+}
+.hero-msg a:hover{
+    color: #011d39;
+    text-decoration: underline; /** when hover it provide a underline. **/
+}
+/** css for shopping boxes **/
+.shop-box{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, #ba0322, rgb(217, 246, 240));
+}
+
+.box{
+    height: 375px;
+    width: 23%;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    
+}
+.shop-now{
+    padding-top: 15px;
+    color: #2162a1;
+}
+.shop-now:hover{
+    color: #013161;
+}
+/** Now styling all the individuals boxes **/
+
+.box1-image{
+    
+    background-image: url("images/box1-image.jpg");
+    height: 275px;
+    width: 100%;
+    background-size: cover;
+    margin-top: 10px;
+    
+}
+.box2-image{
+    background-image: url("images/box2-image.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+}
+.box3-image{
+    background-image: url("images/box3-image.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+}
+.box4-image{
+    background-image: url("images/box4-image.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/** footer css **/
+footer{
+    margin-top: 15px;
+}
+.footpanel1{
+    height: 50px;
+    width: 100%;
+    background-color: #4d5c6a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.86rem;
+}
+.footpanel2{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    background-color: #222f3d;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 10px;
+}
+ul a{
+   font-size: 0.87rem;
+   color: #dddddd;
+   display: block;
+   margin-top: 10px;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+ul p{
+    color: white;
+    font-size: 1rem bold;
+}
+/** foot panel 3 css **/
+.footpanel3{
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    background-color: #222f3d ;
+    border-top: 0.86px solid rgb(85, 83, 83);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo{
+   background-image: url("images/amaz-logo.png");
+   background-size: cover;
+   height: 50px;
+   width: 85px;
+}
+.foot-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.english{
+    display: flex;
+    height: 30px;
+    width: 120px;  
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 60px;
+    border: #dddddd solid 0.86px;
+    border-radius: 3px;
+    
+}
+.english i{
+    color: #dddddd;
+    font-size: 15px;
+}
+.usd{
+    display: flex;
+    height: 30px;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: #dddddd solid 0.86px;
+    border-radius: 3px;
+}
+.usd i{
+    color: #dddddd;
+}
+.united-state{
+    border: #dddddd solid 0.86px;
+    display: flex;
+    height: 30px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 3px;
+}
+.us-logo{
+    background-image: url("images/eng-logo.png");
+    height: 15px;
+    width: 20px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #dddddd 0.86px solid;
+}
